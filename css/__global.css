@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --color-text: #EEEEEE; /* Main text color */
+  --color-primary: #222831; /* Primary color */
+  --color-secondary: #393E46; /* Secondary color */
+  --color-accent: #00ADB5; /* Accent color */
+
+  /* Typography */
+  --base-font: Arial, sans-serif; /* Base font */
+  --base-font-size: 16px; /* Base font size */
+
+  /* Spacing */
+  --s: 8px; /* Small spacing */
+  --m: 16px; /* Medium spacing */
+  --l: 24px; /* Large spacing */
+  --xl: 32px; /*Extra Large spacing */
+  --xxl: 40px; /*Extra Extra Large spacing */
+
+  /* Others */
+  --border-radius: 4px; /* Border radius */
+  --border: solid 1px #888;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  font-size: 16px;  
+  background-color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-size: var(--xl);
+  font-weight: bolder;
+}
+
+h2{
+  font-size: var(--l);
+  font-weight: bolder;
+}
+
+h3{
+  font-size: var(--m)+2.72px;
+  font-weight: bolder;
+}
+
+h4{
+  font-size: var(--m);
+  font-weight: bolder;
+}
+
+h5{
+  font-size: var(--m)-2.72px;
+  font-weight: bolder;
+}
+
+h6{
+  font-size: var(--s)+2.72px;
+  font-weight: bolder;
+}
+
+p{
+  font-size: var(--m);
+}
