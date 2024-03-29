@@ -23,10 +23,10 @@
 }
 
 .nav-item {
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
-.nav-link {  
+.nav-link {
   color: var(--color-text);
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -51,38 +51,33 @@
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    visibility: hidden;        
     position: absolute;
     top: 44px;
     height: 0;
     right: 0;
-    width: 100%;    
+    overflow: hidden;
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    color: var(--color-secondary);
     border-top: solid 1px var(--color-primary);
     background-color: var(--color-secondary);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: height 0.3s ease, color 0.3s ease ;
+    transition: height 0.3s ease;
   }
-  
+
   .nav-item {
-    margin: 10px 0;
+    padding: 10px 0;
   }
-  
+
   .menu-toggle {
     display: flex;
   }
-  
+
   .navbar-container {
     position: relative;
   }
-  
-  .nav-menu.active{
-    display: flex;
-    color: var(--color-text);
-    visibility: visible;
-    height: 160px;
+
+  .active {
+    height: 10rem;
   }
-    
 }
