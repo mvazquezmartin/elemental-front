@@ -1,23 +1,27 @@
 :root {
   /* Colors */
-  --color-text: #EEEEEE; /* Main text color */
-  --color-primary: #222831; /* Primary color */
-  --color-secondary: #393E46; /* Secondary color */
-  --color-accent: #00ADB5; /* Accent color */
+  --color-text: #eeeeee;
+  --color-primary: #222831;
+  --color-secondary: #393e46;
+  --color-accent: #00adb5;
 
   /* Typography */
-  --base-font: Arial, sans-serif; /* Base font */
-  --base-font-size: 16px; /* Base font size */
+  --primary-font-family: Arial, Helvetica, sans-serif;
+  --primary-font-weight: 600;
+  --secondary-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   /* Spacing */
-  --s: 8px; /* Small spacing */
-  --m: 16px; /* Medium spacing */
-  --l: 24px; /* Large spacing */
-  --xl: 32px; /*Extra Large spacing */
-  --xxl: 40px; /*Extra Extra Large spacing */
+  --xs: 0.4rem; /* 4px*/
+  --s: 0.5rem; /* 8px*/
+  --m: 1rem; /* 16px*/
+  --l: 1.5rem; /* 24px*/
+  --xl: 2rem; /* 32px*/
+  --xxl: 2.5rem; /* 40px*/
 
   /* Others */
-  --border-radius: 4px; /* Border radius */
+  --border-radius: 4px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   --border: solid 1px #888;
 }
 
@@ -28,9 +32,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--primary-font-family);
   color: var(--color-text);
-  font-size: 16px;  
+  font-size: var(--m);
   background-color: var(--color-primary);
   margin: 0;
   padding: 0;
@@ -38,38 +42,51 @@ body {
 
 a {
   text-decoration: none;
+  &:hover,
+  &:visited,
+  &:focus {
+    color: var(--color-text);
+  }
+  &:active {
+    color: #000000;
+    /* background-color: #a60000; */
+  }
 }
 
-h1{
+h1 {
   font-size: var(--xl);
-  font-weight: bolder;
+  font-weight: var(--primary-font-weight);
 }
 
-h2{
+h2 {
   font-size: var(--l);
-  font-weight: bolder;
+  font-weight: var(--primary-font-weight);
 }
 
-h3{
-  font-size: var(--m)+2.72px;
-  font-weight: bolder;
+h3 {
+  font-size: calc(var(--m) + 2.72px);
+  font-weight: var(--primary-font-weight);
 }
 
-h4{
+h4 {
   font-size: var(--m);
-  font-weight: bolder;
+  font-weight: var(--primary-font-weight);
 }
 
-h5{
-  font-size: var(--m)-2.72px;
-  font-weight: bolder;
+h5 {
+  font-size: calc(var(--m) - 2.72px);
+  font-weight: var(--primary-font-weight);
 }
 
-h6{
-  font-size: var(--s)+2.72px;
-  font-weight: bolder;
+h6 {
+  font-size: calc(var(--s) + 2.72px);
+  font-weight: var(--primary-font-weight);
 }
 
-p{
+p {
   font-size: var(--m);
 }
+
+/* * {
+  border: 1px solid #ff0000;
+} */

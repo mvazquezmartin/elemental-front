@@ -1,5 +1,9 @@
-function createElement(tagName, options = {}) {
-  const { attributes = {}, classes = [], textContent = '' } = options;
+function createElement(
+  tagName,
+  attributes = {},
+  classes = [],
+  textContent = ''
+) {
   const element = document.createElement(tagName);
 
   // Asignar atributos al elemento

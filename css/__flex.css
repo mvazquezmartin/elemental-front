@@ -1,0 +1,69 @@
+/* 100% WIDTH CONTAINER */
+.container-100 {
+  display: flex;
+  width: 100%;
+}
+
+/* 70% WIDTH CONTAINER */
+.container-70 {
+  display: flex;
+  width: 70%;
+  margin-top: var(--s);
+  @media (max-width: 768px) {
+    & {
+      width: 95%;
+      flex-direction: column;
+      margin-top: var(--xs);
+    }
+  }
+}
+
+/* FLEX DIRECTION */
+.f-direction-row {
+  flex-direction: row;
+}
+.f-direction-column {
+  flex-direction: column;
+}
+
+/* ALIGN ALL CENTER */
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* JUSTIFY-CONTENT */
+.f-justify-start {
+  justify-content: start;
+}
+.f-justify-end {
+  justify-content: end;
+}
+.f-justify-center {
+  justify-content: center;
+}
+.f-justify-bewteen {
+  justify-content: space-between;
+}
+.f-justify-around {
+  justify-content: space-around;
+}
+.f-justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* ALIGN-ITEMS */
+.f-align-start {
+  align-items: start;
+}
+.f-align-end {
+  align-items: end;
+}
+.f-align-center {
+  align-items: center;
+}
+
+/* CUSTOM FLEX-BASIS */
+.f-basis-25 > p, .f-basis-25> div{
+  flex-basis: 25%;
+}
