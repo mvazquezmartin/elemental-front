@@ -25,6 +25,11 @@
 .f-direction-column {
   flex-direction: column;
 }
+.f-mobile-column {
+  @media (max-width768px) {
+    flex-direction: column;
+  }
+}
 
 /* ALIGN ALL CENTER */
 .f-center {
@@ -64,6 +69,7 @@
 }
 
 /* CUSTOM FLEX-BASIS */
-.f-basis-25 > p, .f-basis-25> div{
+.f-basis-25 > p,
+.f-basis-25 > div {
   flex-basis: 25%;
 }
