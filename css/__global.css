@@ -31,6 +31,7 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: var(--primary-font-family);
   color: var(--color-text);
@@ -38,6 +39,7 @@ body {
   background-color: var(--color-primary);
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 a {
@@ -86,6 +88,13 @@ h6 {
 p {
   font-size: var(--m);
 }
+
+button{
+ &:hover{
+  
+ }
+}
+
 
 /* CHECK OVERFLOW */
 /* * {

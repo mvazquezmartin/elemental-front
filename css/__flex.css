@@ -1,7 +1,9 @@
 /* 100% WIDTH CONTAINER */
 .container-100 {
   display: flex;
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--m);
 }
 
 /* 70% WIDTH CONTAINER */
